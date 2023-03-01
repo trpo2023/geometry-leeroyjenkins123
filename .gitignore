@@ -1,6 +1,4 @@
-*.swp
-*.swo
-*.o
-Makefile~
-Makefile
 main
+geometry
+*#Makefile#
+*Makefile~
