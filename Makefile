@@ -1,2 +1,10 @@
 all:
-	$ gcc -Wall -Werror -o main main.c
+	$ gcc -Wall -Werror -o geometry geometry.c
+
+clean:
+
+	rm geometry
+
+run:
+
+	./geometry
