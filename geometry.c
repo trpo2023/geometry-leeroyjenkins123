@@ -8,9 +8,8 @@ const float pi = 3.141592;
 void token(char* a)
 {
     float x, y, rad, square, perimetr;
-    char del[] = "( ,)";
-    char* tok = strtok(a, del);
-    x = atof(strtok(NULL, del));
+    char del[] = "circle( ,)";
+    x = atof(strtok(a, del));
     y = atof(strtok(NULL, del));
     rad = atof(strtok(NULL, del));
     square = pi * rad * rad;
