@@ -2,3 +2,5 @@ main
 *#Makefile#
 *Makefile~
 *.exe
+*.o
+*.d
