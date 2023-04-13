@@ -1,12 +1,11 @@
-#include <ctype.h>
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#include "check.h"
+#include <libgeometry/check.h>
 
-#define _USE_MATH_DEFINES
+#define _USE_MATH_DEFINE_
 
 void token(char* a)
 {
@@ -46,6 +45,7 @@ int main()
         }
         count++;
     }
+
     length = count;
     fclose(file1);
 
