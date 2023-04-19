@@ -5,8 +5,6 @@ LIB_NAME = libgeometry
 
 CFLAGS = -Wall -Werror
 CPPFLAGS = -I src -MD -MMD
-LDFLAGS = 
-LSLIBS = 
 
 BIN_DIR = bin
 OBJ_DIR = obj
@@ -30,7 +28,7 @@ all: $(APP_PATH)
 -include $(DEPS)
 
 $(APP_PATH): $(APP_OBJECTS) $(LIB_PATH)
-	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@ $(LDFLAGS) $(LDLIBS)
+	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@
 
 $(LIB_PATH): $(LIB_OBJECTS)
 	ar rcs $@ $^
