@@ -13,7 +13,7 @@ SRC_DIR = src
 TEST_DIR = test 
 
 APP_PATH = $(BIN_DIR)/$(APP_NAME)
-LIB_PATH = $(OBJ_DIR)/$(SRC_DIR)/$(LIB_NAME)/$(LIB_NAME).o
+LIB_PATH = $(OBJ_DIR)/$(SRC_DIR)/$(LIB_NAME)/$(LIB_NAME).a
 TEST_PATH = $(BIN_DIR)/$(TEST_NAME)
 
 SRC_EXT = c
@@ -51,9 +51,9 @@ run:
 .PHONY: clean
 
 clean:
-	$(RM) $(APP_PATH) $(OBJ_DIR)/*/*/*.[od]
+	$(RM) $(APP_PATH) $(OBJ_DIR)/*/*/*.[oad]
 	$(RM) $(BIN_DIR)/*.[exed]
-	$(RM) obj/test/*.[aod]
+	$(RM) obj/test/*.[od]
 
 .PHONY: test
 
