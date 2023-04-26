@@ -35,7 +35,7 @@ all: $(APP_PATH)
 -include $(DEPS)
 
 $(APP_PATH): $(APP_OBJECTS) $(LIB_PATH)
-	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@
+	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@ -lm
 
 $(LIB_PATH): $(LIB_OBJECTS)
 	ar rcs $@ $^
@@ -46,7 +46,6 @@ $(OBJ_DIR)/%.o: %.c
 .PHONY: run
 
 run:
-	
 	./bin/geometry
 
 .PHONY: clean
@@ -61,4 +60,4 @@ clean:
 test: $(TEST_PATH)
 
 $(TEST_PATH): $(TEST_OBJECTS) $(LIB_PATH)
-	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@
+	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@ -lm
