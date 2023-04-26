@@ -46,9 +46,9 @@ $(OBJ_DIR)/%.o: %.c
 run:
 	./bin/geometry
 
-.PHONY: clear
+.PHONY: clean
 
-clear:
+clean:
 	$(RM) $(APP_PATH) $(OBJ_DIR)/*/*/*.[aod]
 	$(RM) $(BIN_DIR)/*.[exed]
 	$(RM) obj/test/*.[aod]
