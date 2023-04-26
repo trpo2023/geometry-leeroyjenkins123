@@ -33,7 +33,7 @@ all: $(APP_PATH)
 -include $(DEPS)
 
 $(APP_PATH): $(APP_OBJECTS) $(LIB_PATH)
-	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@
+	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -o $@ -lm
 
 $(LIB_PATH): $(LIB_OBJECTS)
 	ar rcs $@ $^
