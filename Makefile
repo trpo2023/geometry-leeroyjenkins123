@@ -5,7 +5,7 @@ LIB_NAME = libgeometry
 TEST_NAME = test 
 
 CFLAGS = -Wall -Werror
-CPPFLAGS = -I src -MD -MMD
+CPPFLAGS = -I src -MP -MMD
 
 BIN_DIR = bin
 OBJ_DIR = obj
