@@ -48,7 +48,6 @@ int main()
 
         // find index of ')' token
         ind_close_bracket = find_close_bracket(a, &length);
-        printf("?%d\n", ind_close_bracket);
 
         // check first number
         ind_first_num_elm = check_first_num(a, &ind_open_bracket, &error);
