@@ -1,3 +1,2 @@
-circle(1 2, 3)
-circle(1.2 3.45, 123)
-circle(1 x, 2)
+circle(12 23, 123)
+circle(12 23, 123)
